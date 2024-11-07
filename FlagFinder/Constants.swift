@@ -12,6 +12,8 @@ enum Constants {
 //        "ch", "fr", "gb"
 //    ]
 
+    static let partySize = 12
+
     static let countryCodes = [
         "ad", "ae", "af", "al", "am", "ao", "aq", "ar", "at", "au",
         "az", "ba", "bd", "be", "bf", "bg", "bh", "bi", "bj", "bl",

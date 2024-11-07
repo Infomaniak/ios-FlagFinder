@@ -44,7 +44,7 @@ struct GameView: View {
                     .font(.system(size: 32, weight: .medium))
                     .foregroundStyle(Color.greyOrca)
 
-                Text("n°\(gameManager.total)/12")
+                Text("n°\(gameManager.total)/\(Constants.partySize)")
                     .font(.system(size: 16, weight: .medium))
                     .foregroundStyle(Color.greyElephant)
             }

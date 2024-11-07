@@ -18,6 +18,10 @@ class GameManager: ObservableObject {
     @Published var animate = false
 
     func initFlagsToGuess() {
+        guard total < Constants.partySize else {
+            return
+        }
+
         answered = nil
         let result = Array(Constants.countryCodes.shuffled().prefix(3))
         withAnimation(.easeInOut) {
@@ -42,7 +46,7 @@ class GameManager: ObservableObject {
             self.initFlagsToGuess()
         }
     }
-    
+
     func restart() {
         score = 0
         total = 0
